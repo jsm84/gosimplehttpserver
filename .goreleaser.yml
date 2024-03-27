@@ -7,18 +7,13 @@ builds:
       main: cmd/simplehttpserver/simplehttpserver.go
       goos:
         - linux
-        - windows
         - darwin
       goarch:
         - amd64
-        - 386
-        - arm
         - arm64
-  
+
 archives:
-- format: zip
-  replacements:
-      darwin: macOS
+- format: binary
 
 checksum:
   algorithm: sha256
